@@ -1,0 +1,111 @@
+:root {
+  --light-blue: rgb(170, 224, 240);
+  --dark-blue: #2934a0;
+  --white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    background: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+}
+#header {
+    text-align: center;
+    margin: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.myButton {
+	background-color: var(--dark-blue);
+	border-radius:28px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:var(--white);
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton.read {
+  background-color: green;
+}
+.myButton.not-read {
+  background-color: red;
+}
+
+dialog {
+    margin-top: 10px;
+    background: var(--white);
+    border: none;
+    border-radius: 1rem;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  dialog::backdrop {
+    background-color: hsl(250, 100%, 50%, 0.25);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #library {
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    background: var(--dark-blue);
+    flex: 1;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .book {
+    background-color: var(--light-blue);
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer {
+    width: 100vh;
+    border: 2px solid black;
+    height: 25px;
+  }
